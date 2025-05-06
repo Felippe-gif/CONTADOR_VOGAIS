@@ -1,0 +1,14 @@
+def contador_vogais(palavra):
+    vogais = 'aeiouAEIOU'
+    cont = 0
+    for letra in palavra:
+        if letra in vogais:
+            cont += 1
+    return cont
+
+print('\n\t\t === CONTADOR DE VOGAIS ====\n')
+
+palavra = input('Digite uma palavra: ')
+quantidade_vogais = contador_vogais(palavra)
+
+print(f'A quantidade de vogais na palavra é: {quantidade_vogais}')
